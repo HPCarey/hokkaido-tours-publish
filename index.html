@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A promotionala site for tourism in Hokkaido, Japan">
+  <meta name="keywords"
+    content="Hokkaido, Japan, adventure, holiday, vacation, travel, culture, hiking, adventure holiday, tours, hiking tours, adeventure holiday">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/f972d991d8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <title>Hokkaido</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Hokkaido <br> Tours <i
+            class="fa-brands fa-canadian-maple-leaf"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto"> <!-- Add mx-auto class here -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="region.html">By Region</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="hiking.html">Hiking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="tours.html">Tours</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto shoping-cart-icon">
+            <li class="nav-item sum-items">
+              <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample"><i class="fas fa-cart-shopping"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Shopping Cart</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <!-- Shopping cart content goes here -->
+      <p class="text-start">No items in cart</p>
+      <div id="sum-prices" class="text-start mt-3">Total: $0.00</div>
+    </div>
+  </div>
+  <main>
+    <!-- Carousel Section -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/wildlifewinter.jpg" class="d-block w-100" alt="Hokkaido Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/biei-capture.JPG" class="d-block w-100" alt="Hokkaido Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/Sapporo.jpg" class="d-block w-100" alt="Hokkaido Image 4">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/amazingmountain.jpg" class="d-block w-100" alt="Hokkaido Image 5">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/wales2.jpg" class="d-block w-100" alt="Hokkaido Image 6">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/otarucanal.jpg" class="d-block w-100" alt="Hokkaido Image 7">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/ainu culture.jpg" class="d-block w-100" alt="Hokkaido Image 3">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/stunningcoastline.jpg" class="d-block w-100" alt="Hokkaido Image 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+  <!-- About Section -->
+  <section id="about" class="bg-light text-center py-5">
+    <div class="container">
+      <h2>About Hokkaido</h2>
+      <p class="lead">
+        Welcome to Hokkaido, Japan! A region known for its stunning landscapes, vibrant culture, and delicious
+        cuisine.
+        Hokkaido offers a unique blend of adventure and tranquility, making it an ideal destination for all types of
+        travelers.
+      </p>
+      <p>
+        Our site is dedicated to showcasing the beauty of Hokkaido and providing information about various regions,
+        hiking trails, cultural experiences, and exciting tours. Whether you're a nature enthusiast, food lover, or
+        history buff, Hokkaido has something special for you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-light text-dark text-center py-3 mt-auto">
+    <div class="container">
+      <p>&copy; 2023 Hokkaido Tours Copyright</p>
+    </div>
+  </footer>
+
+  <!-- Separate Popper and Bootstrap JS -->
+  <!-- Footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

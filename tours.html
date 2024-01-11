@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A promotionala site for tourism in Hokkaido, Japan">
+  <meta name="keywords"
+    content="Hokkaido, Japan, adventure, holiday, vacation, travel, culture, hiking, adventure holiday, tours, hiking tours, adeventure holiday">
+  <script src="https://kit.fontawesome.com/f972d991d8.js" crossorigin="anonymous"></script>
+  <script src="assets/scripts/shoppingcart.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <title>Hokkaido</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Hokkaido <br> Tours <i
+            class="fa-brands fa-canadian-maple-leaf"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="region.html">By Region</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="hiking.html">Hiking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="tours.html">Tours</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto shoping-cart-icon">
+            <li class="nav-item sum-items">
+              <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample"><i class="fas fa-cart-shopping"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Shopping Cart</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <!-- Shopping cart content goes here -->
+      <p class="text-start">No items in cart</p>
+      <div id="sum-prices" class="text-start mt-3">Total: $0.00</div>
+    </div>
+  </div>
+  <section id="tours" class="bg-light mt-5">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>Purchase your tour guide</h2>
+        <p class="lead text-muted">Choose from a range of seasonal activities</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="assets/images/furanoskiresort.webp" class="card-img-top" alt="furano ski resort">
+            <div class="card-body">
+              <h5 class="card-title">Winter Wonderland Tour</h5>
+              <h5>$<span class="priceValue">29.99</span></h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <a href="#" class="btn btn-info btn-purchase-tour">Purchase Tour</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="assets/images/matsumaecastlecherryblossoms.jpg" class="card-img-top" alt="matsumae castle">
+            <div class="card-body">
+              <h5 class="card-title">Hokkaido Highlights</h5>
+              <h5>$<span class="priceValue">29.99</span></h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <a href="#" class="btn btn-info btn-purchase-tour">Purchase Tour</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="assets/images/autumnoutdoors.jpg" class="card-img-top" alt="autumn leaves">
+            <div class="card-body">
+              <h5 class="card-title">Autumn Wildlife and Hiking Tour</h5>
+              <h5>$<span class="priceValue">29.99</span></h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
+              <a href="#" class="btn btn-info btn-purchase-tour">Purchase Tour</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="bg-light text-dark text-center py-3 mt-auto">
+    <div class="container">
+      <p>&copy; 2023 Hokkaido Tours Copyright</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

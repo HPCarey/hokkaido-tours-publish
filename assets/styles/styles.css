@@ -1,0 +1,204 @@
+/* VARIABLES */
+:root {
+    --bg-color: #fff;
+    --link-color: #000;
+    --link-size: 1.1rem;
+    --right-side-bg-color: 81, 187, 254;
+  }
+  
+  /* General CSS */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+  }
+  
+  html {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(190, 62, 23)0;
+  }
+  
+  .card-img-top {
+    object-fit: cover;
+    height: 200px; /* Adjust the height as needed */
+}
+
+.fa-canadian-maple-leaf {
+  color: rgb(190, 62, 23);
+}
+
+.navbar-brand {
+  color: rgb(190, 62, 23);
+  margin-left: 6%;
+}
+
+.shoping-cart-icon {
+  margin-right: 3%;
+}
+
+/* Add a transition effect */
+.btn-info {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+.btn-info:hover {
+  background-color: #5bc0de; 
+  color: #fff; 
+  border: #fff;
+}
+
+.contact {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  /* color: #007bff; */
+  color: rgb(190, 62, 23);
+}
+
+h2{
+  color: rgb(190, 62, 23);
+}
+
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+/* Customize the submit button */
+.btn-submit {
+  background-color: #0dcaf0;
+  color: #fff;
+}
+
+.banner {
+  position: relative;
+  height: 80vh; /* Adjust the height as needed */
+  width: 100%;
+  color: #d7c4c6;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Adjust the opacity as needed */
+}
+
+.text-container {
+  position: absolute;
+  bottom: 20%; /* Adjust the percentage to control the space at the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; /* Text color */
+  text-align: center;
+}
+
+.validation-heading {
+  color: #d7c4c6
+}
+
+.carousel-item {
+  max-height: 55vh; /* Adjust the maximum height as per your design */
+  object-fit: cover; /* This ensures that the image covers the entire container while maintaining its aspect ratio */
+}
+
+/* If you want to center the images vertically */
+.carousel-item img {
+  margin: auto;
+  display: block;
+  width: 100%; /* Make the image fill its container */
+  height: 100%; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure the entire image is visible, even if it's cropped*/
+
+}
+
+#video {
+  text-align: center;
+  margin-top: 2rem; /* You can adjust this margin as needed */
+  margin-bottom: 2rem; /* You can adjust this margin as needed */
+  height: 70vh
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  height: 70%;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+}
+.activity-container {
+  border-bottom: 1px solid #ddd; /* Add border between tours */
+  padding: 20px;
+}
+
+.activity-container img {
+  width: 300px; /* Set a fixed width */
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  margin-bottom: 15px;
+  border-radius: 50%; /* Make images circular */
+}
+
+/* Style adjustment for medium-sized screens and larger */
+@media (min-width: 768px) {
+  .activity-container.d-flex.flex-md-row-reverse img {
+    margin-left: 0; /* Reset left margin */
+    margin-right: 15px; /* Add right margin for spacing */
+  }
+
+  .hidden-md {
+    display: none; /* Hide image on medium screens and larger */
+  }
+}
+
+/* Style adjustment for small screens (mobile) */
+@media (max-width: 767.98px) {
+  .activity-container {
+    text-align: center;
+  }
+  .activity-container.d-flex.flex-column-reverse img {
+    margin-bottom: 0; /* Remove bottom margin for spacing */
+    
+  }
+
+  .hidden-sm {
+    display: none; /* Hide image on small screens (mobile) */
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1553px;
+  }
+}
